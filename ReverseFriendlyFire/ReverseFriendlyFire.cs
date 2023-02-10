@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Collections.Generic;
 using System.Linq;
@@ -48,7 +48,7 @@ namespace ReverseFriendlyFire
             {
                 return;
             }
-            if (!(ev.Player.Role.Side == Side.Mtf && ReverseFriendlyFire.Instance.Config.RFF_MTF) || (ev.Player.Role.Side == Side.ChaosInsurgency && ReverseFriendlyFire.Instance.Config.RFF_CHAOS))
+            if (!((ev.Player.Role.Side == Side.Mtf && ReverseFriendlyFire.Instance.Config.RFF_MTF) || (ev.Player.Role.Side == Side.ChaosInsurgency && ReverseFriendlyFire.Instance.Config.RFF_CHAOS)))
             {
                 return;
             }
